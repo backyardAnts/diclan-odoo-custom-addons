@@ -77,5 +77,8 @@ class PosSalesReportWizard(models.TransientModel):
 
         act = self.env.ref("pos_invoice_diclan.action_report_pos_logs_diclan")
         _logger.warning("DICLAN REPORT ACTION: id=%s report_name=%s", act.id, act.report_name)
-
-        return act.report_action(None, data=data)
+        action = act.report_action(None, data=data)
+        action.update({
+            "close_on_report_download": True,
+        })
+        return action
