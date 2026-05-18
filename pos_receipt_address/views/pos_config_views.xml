@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="pos_config_view_form_inherit_lbp_usd_rate" model="ir.ui.view">
+        <field name="name">pos.config.form.inherit.lbp.usd.rate</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='other_devices']" position="after">
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                        <label for="lbp_usd_rate" string="LBP / USD Rate"/>
+                        <div class="text-muted">
+                            Display-only USD conversion rate used on printed POS receipts.
+                        </div>
+                        <div class="content-group mt16">
+                            <group string="Receipt USD Conversion">
+                                <field name="lbp_usd_rate"/>
+                            </group>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
