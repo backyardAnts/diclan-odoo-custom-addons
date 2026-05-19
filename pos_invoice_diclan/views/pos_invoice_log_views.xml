@@ -70,7 +70,7 @@
   </record>
 
   <menuitem id="menu_pos_invoice_diclan_root"
-            name="POS Invoice Diclan"
+            name="Connection"
             parent="point_of_sale.menu_point_root"
             sequence="90"/>
   <menuitem id="menu_pos_invoice_log"

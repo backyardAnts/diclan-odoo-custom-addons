@@ -1,6 +1,6 @@
 <odoo>
   <menuitem id="menu_diclan_reporting_root"
-            name="Diclan Reporting"
+            name="Theme"
             parent="point_of_sale.menu_point_root"
             sequence="60"/>
 
